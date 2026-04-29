@@ -1,0 +1,123 @@
+NEXARA LABS — COMPETITIVE LANDSCAPE
+=====================================
+Prepared by: Head of Product Strategy
+Last updated: Q1 2026
+Source: Public filings, analyst reports, win/loss interviews with sales team
+
+OVERVIEW
+--------
+Nexara Labs operates in the enterprise AI workflow automation market, which IDC estimates
+at $8.4B in 2025, growing at a CAGR of 34% through 2028. Nexara competes primarily on
+three dimensions: ease of deployment for non-ML teams, depth of enterprise integrations,
+and compliance/governance features. The competitive set can be divided into (a) dedicated
+AI workflow platforms, (b) legacy RPA vendors expanding into AI, and (c) foundation model
+providers building enterprise platforms.
+
+COMPETITOR 1: FlowMind AI (Primary Direct Competitor)
+------------------------------------------------------
+Founded: 2019 | HQ: San Francisco, CA | Stage: Series D ($210M raised)
+Estimated ARR: $95M (per TechCrunch, Jan 2026)
+Headcount: ~520
+
+Positioning:
+FlowMind AI is Nexara's most direct competitor. Both companies target mid-market
+enterprises with low-code AI workflow platforms. FlowMind's go-to-market emphasises speed
+of deployment ("live in 48 hours") and a larger pre-built template library (800+ templates
+vs Nexara's 340+). FlowMind is ahead of Nexara in ARR but behind on gross margin (63%
+vs Nexara's 71%), suggesting a less efficient cost structure.
+
+Strengths vs Nexara:
+- Larger sales team (85 AEs vs Nexara's 42); broader logo coverage in SMB segment.
+- More extensive template library and a more mature partner ecosystem (120+ certified
+  implementation partners).
+- Earlier mover into APAC; Singapore office opened Q1 2025.
+
+Weaknesses vs Nexara:
+- No native compliance/governance layer equivalent to NexaGuard; positioned as a
+  weakness in financial services deals.
+- Higher churn (reported 8.2% gross logo churn vs Nexara's 4.1%); attributed to weaker
+  customer success motion.
+- Less sophisticated RAG capabilities; relies on out-of-the-box LLM context windows
+  rather than purpose-built retrieval pipelines.
+
+Win rate vs FlowMind (Nexara internal data): 54% (last 4 quarters, enterprise deals >$100K)
+
+---
+
+COMPETITOR 2: ProcessIQ (Legacy RPA Vendor)
+--------------------------------------------
+Founded: 2012 | HQ: Chicago, IL | Stage: Public (NASDAQ: PRIQ, ~$1.8B market cap)
+Revenue: $340M (FY2025, total; AI-relevant segment ~$80M)
+Headcount: ~2,100
+
+Positioning:
+ProcessIQ is a traditional RPA (robotic process automation) company that has been
+aggressively rebranding as an "AI-first" platform since 2023. Its core product is deeply
+embedded in large enterprise operations teams, and it is leveraging these relationships
+to cross-sell AI workflow capabilities. ProcessIQ's AI layer is less technically
+sophisticated than Nexara's but benefits from massive distribution and existing trust
+with IT procurement teams.
+
+Strengths vs Nexara:
+- Installed base: 1,200+ enterprise clients who already trust ProcessIQ and are natural
+  upsell targets for AI features; Nexara must displace or co-exist.
+- Professional services depth: 600-person services org capable of handling complex
+  enterprise change management that Nexara's 40-person team cannot match.
+- Balance sheet: Public company with $180M cash; can absorb losses to win deals.
+
+Weaknesses vs Nexara:
+- Technical debt: ProcessIQ's AI layer is a thin wrapper over OpenAI APIs bolted onto
+  a 10-year-old RPA architecture. Performance on complex multi-step workflows is poor.
+- Slow product velocity: Public company bureaucracy; major features take 12–18 months
+  to ship vs Nexara's 6–10 week release cycles.
+- Customer perception: Existing clients view ProcessIQ as a legacy automation vendor,
+  not an AI innovator; brand credibility is a documented friction point in AI deals.
+
+Win rate vs ProcessIQ (Nexara internal data): 71% in greenfield deals; 22% in
+ProcessIQ-incumbent accounts (displacement is very difficult).
+
+---
+
+COMPETITOR 3: Vertex Agents (Google Cloud)
+-------------------------------------------
+Parent: Alphabet / Google | Product: Vertex AI Agent Builder
+Launch: GA announced Google Cloud Next 2025
+
+Positioning:
+Vertex Agents represents the most significant long-term strategic threat to Nexara. Google
+is bringing enterprise agent workflow capabilities directly into Vertex AI, bundled with
+Google Cloud infrastructure. The product targets the same persona (operations teams wanting
+to build AI workflows) and is priced aggressively to drive Google Cloud consumption.
+As of Q1 2026, Vertex Agents is in early-adopter phase and lacks the enterprise
+integrations and compliance features of NexaCore, but Google's resources and distribution
+make this a high-priority watch item.
+
+Strengths vs Nexara:
+- Distribution: Sold alongside GCP, giving Vertex Agents instant access to Google's
+  enterprise account base.
+- Pricing: Priced as a GCP service (usage-based), which is attractive to cost-conscious
+  buyers and difficult for Nexara to compete with on pure price.
+- Model access: Native integration with Gemini 1.5/2.0 provides best-in-class model
+  quality for Google Cloud clients.
+
+Weaknesses vs Nexara (current state):
+- Integration depth: 34 connectors at launch vs Nexara's 200+. Enterprise deals require
+  connectors to SAP, Oracle, and legacy ERPs that Vertex Agents does not yet support.
+- No compliance layer: NexaGuard equivalent is on the Vertex AI roadmap but not shipped.
+- Customisation: Vertex Agents is more opinionated and less configurable than NexaCore;
+  complex enterprise workflows require workarounds.
+
+Win rate vs Vertex Agents: Insufficient data (product too new); Nexara is tracking 6
+competitive deals where Vertex Agents is being evaluated alongside NexaCore.
+
+COMPETITIVE POSITIONING SUMMARY
+--------------------------------
+Dimension             Nexara    FlowMind    ProcessIQ    Vertex Agents
+-----------           ------    --------    ---------    -------------
+Compliance/Gov.       High      Low         Medium       Low (roadmap)
+Integration Depth     High      High        Medium       Low (growing)
+Enterprise RAG        High      Medium      Low          Medium
+Product Velocity      High      High        Low          High
+Distribution          Medium    Medium      High         Very High
+Gross Margin          71%       63%         ~48%         N/A (bundled)
+Brand (AI-native)     High      High        Low          Very High

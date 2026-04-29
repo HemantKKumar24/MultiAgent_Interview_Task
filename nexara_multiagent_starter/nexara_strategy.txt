@@ -1,0 +1,95 @@
+NEXARA LABS — 5-YEAR STRATEGIC PLAN (FY2026–FY2030)
+=====================================================
+Classification: Confidential — Board Approved Q4 2025
+Presenter: Dr. Priya Anand, CEO
+
+VISION FOR 2030
+---------------
+By the end of FY2030, Nexara Labs aims to be the market-leading AI operations platform
+for mid-market enterprises globally, serving 1,500+ clients across North America, Europe,
+and Asia-Pacific, with $400M+ in ARR and a clear path to public markets or strategic
+acquisition at a valuation of $2.5B–$3.5B.
+
+STRATEGIC PILLARS
+-----------------
+
+Pillar 1: Platform Depth (FY2026–FY2027)
+  Nexara will invest heavily in extending NexaCore's agent orchestration capabilities.
+  The roadmap includes native multi-agent coordination (agents that spawn sub-agents),
+  persistent agent memory across workflow runs, and a versioned agent library that lets
+  clients publish and subscribe to reusable agent templates. The goal is to increase
+  average contract value from $187K to $280K ACV by end of FY2027 through upsell of
+  these capabilities.
+
+Pillar 2: Vertical Specialisation (FY2026–FY2028)
+  Rather than remaining horizontal, Nexara will develop three industry-specific "solution
+  stacks" built on top of NexaCore:
+  - NexaSupply: AI workflows for manufacturing and supply chain (target: 150 new logos)
+  - NexaCredit: AI-assisted credit decisioning for community banks and credit unions
+    (target: 80 new logos; dependent on NexaGuard EU AI Act certification)
+  - NexaOps: IT operations and incident response automation (target: 100 new logos)
+  Each stack includes pre-built integrations, pre-trained domain models, and compliance
+  documentation specific to its vertical.
+
+Pillar 3: Geographic Expansion (FY2026–FY2028)
+  Primary expansion markets in priority order:
+  1. United Kingdom: Established regulatory familiarity (UK AI Safety Institute engaged),
+     English-language GTM, and existing relationships with two UK-based PE firms as
+     potential channel partners. Target: open London office Q2 2026.
+  2. Germany/DACH: Large manufacturing base aligns with NexaSupply stack. Regulatory
+     environment is demanding but navigable with NexaGuard. Target: Frankfurt presence
+     Q1 2027.
+  3. Singapore/APAC: Lighter-touch regulatory environment; growing demand for AI
+     automation in financial services. Target: Singapore entity Q3 2027.
+  Geographic expansion will be funded from existing cash reserves; no additional capital
+  raise planned unless APAC expansion is accelerated.
+
+Pillar 4: Ecosystem and Partnerships (FY2027–FY2029)
+  Nexara will build a partner ecosystem of 50+ certified implementation partners by FY2028,
+  reducing reliance on the internal Professional Services team and enabling the company to
+  serve SMB clients (currently excluded due to high-touch onboarding cost) through
+  partner-led delivery. Strategic technology alliances with at least two major cloud
+  providers are planned to support co-sell agreements and marketplace listings.
+
+Pillar 5: AI Research & Defensibility (ongoing)
+  To defend against commoditisation by foundation model providers, Nexara will maintain a
+  dedicated research team of 30+ engineers focused on: (a) model efficiency (reducing
+  inference cost per workflow run), (b) domain-specific fine-tuning pipelines for
+  NexaSupply and NexaCredit, and (c) evaluation frameworks for enterprise AI reliability
+  that Nexara intends to publish as open standards, positioning itself as a thought leader.
+
+M&A APPETITE
+------------
+Nexara's board has approved a framework for small-to-medium acquisitions in the range of
+$5M–$40M, with the following target profiles:
+
+- Data integration specialists: Companies with proprietary connectors to enterprise data
+  systems (SAP, Oracle, Salesforce) that would expand NexaCore's integration library.
+  Budget: up to $15M.
+
+- Vertical AI companies: Early-stage companies with domain-specific models or datasets
+  relevant to NexaSupply or NexaCredit. Budget: up to $25M. Two targets currently in
+  early-stage diligence (names withheld from this document).
+
+- Compliance technology: If NexaGuard's organic development timeline slips, an acqui-hire
+  of a RegTech company with EU AI Act expertise is being explored. Budget: up to $20M.
+
+Nexara will NOT pursue acquisitions of direct NexaCore competitors, as integration risk
+is assessed as too high relative to the benefit. Inorganic revenue is not included in the
+$400M ARR target.
+
+KEY MILESTONES (FY2026)
+-----------------------
+Q1 2026: Ship multi-agent orchestration (NexaCore v3.0)
+Q2 2026: Open London office; hire VP EMEA Sales
+Q2 2026: Launch NexaSupply stack (beta, 10 design partners)
+Q3 2026: NexaGuard EU AI Act pilot certification complete
+Q4 2026: Close 2 large FS contracts currently in pipeline ($4.2M combined ACV)
+Q4 2026: Achieve $75M ARR milestone
+
+RISK TO STRATEGY
+----------------
+The primary strategic risk is that the vertical specialisation bets (Pillar 2) dilute
+engineering focus and delay the platform depth work (Pillar 1). The board has approved a
+"pillar sequencing" principle: Pillar 1 milestones must be on track before Pillar 2 work
+may draw more than 30% of engineering capacity.

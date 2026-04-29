@@ -1,0 +1,146 @@
+NEXARA LABS — RISK REGISTER (TOP 6)
+=====================================
+Prepared by: Chief Risk Officer
+Review cycle: Quarterly | Last updated: Q1 2026
+
+RISK #1: Enterprise Customer Concentration
+------------------------------------------
+Category: Business / Revenue
+Severity: HIGH
+Probability: MEDIUM
+
+Description:
+As of Q1 2026, Nexara's top 10 customers account for 38% of total ARR. The two largest
+customers (a Tier-1 automotive manufacturer and a regional US bank) each represent over
+5% of ARR individually. A single non-renewal or significant downsell from either would
+materially impact reported metrics and investor confidence ahead of any future liquidity
+event.
+
+Current Mitigations:
+- Dedicated customer success managers assigned to all accounts >$500K ACV.
+- Multi-year contract structures with 85% of top-20 clients (average 2.3-year term).
+- Expansion playbooks targeting additional business units within existing accounts.
+- Executive sponsor programme: CEO conducts quarterly business reviews with top-5 accounts.
+
+Residual Risk: MEDIUM — Mitigations reduce but do not eliminate concentration exposure.
+
+---
+
+RISK #2: Model Quality and Hallucination in Customer Workflows
+---------------------------------------------------------------
+Category: Operational / Reputational
+Severity: HIGH
+Probability: MEDIUM-HIGH
+
+Description:
+NexaCore workflows often feed AI-generated outputs directly into downstream business
+systems (ERP purchase orders, logistics routing, credit decisions). A hallucinated or
+factually incorrect output that causes a client operational loss could trigger contract
+penalties, regulatory scrutiny, and reputational damage. One incident in Q3 2024 (a
+misclassified inventory record in a pilot workflow) almost cost a manufacturing client
+renewal.
+
+Current Mitigations:
+- NexaGuard module provides pre-deployment bias scoring and runtime anomaly detection.
+- All customer-facing workflows require a human-in-the-loop approval gate for actions
+  above a configurable impact threshold.
+- Nexara's SLA explicitly excludes AI output accuracy guarantees; liability is capped.
+- Internal red-team exercises conducted quarterly to surface failure modes.
+
+Residual Risk: MEDIUM-HIGH — As clients request lower human-in-the-loop thresholds,
+exposure increases.
+
+---
+
+RISK #3: Regulatory and Compliance Uncertainty (EU AI Act)
+-----------------------------------------------------------
+Category: Regulatory
+Severity: MEDIUM-HIGH
+Probability: HIGH
+
+Description:
+The EU AI Act classifies several use cases within Nexara's target verticals (credit
+decisioning, employee performance monitoring) as "high-risk AI systems" subject to
+conformity assessments, mandatory audits, and potential prohibitions. Nexara has six
+European clients onboarded and a stated goal of expanding into the EU market in FY2026.
+Non-compliance could block market entry or require costly product rearchitecting.
+
+Current Mitigations:
+- NexaGuard was partially designed as a compliance response; roadmap includes CE-mark
+  equivalent attestation for high-risk workflows by Q3 2026.
+- External legal counsel (DLA Piper) engaged for ongoing EU AI Act interpretation.
+- EU market expansion plans include a Brussels-based compliance officer hire (Q2 2026).
+
+Residual Risk: MEDIUM — Timeline and enforcement interpretations remain fluid.
+
+---
+
+RISK #4: Talent Retention in Core AI/ML Engineering
+----------------------------------------------------
+Category: Operational / People
+Severity: MEDIUM
+Probability: MEDIUM
+
+Description:
+Nexara's competitive advantage is partly embodied in its 28-person AI/ML engineering
+team. Attrition in this group — particularly the 6 senior researchers responsible for
+the core NexaCore inference optimisation layer — would degrade product velocity and
+could benefit competitors if talent is poached. Salary benchmarking shows Nexara is
+10–15% below Big Tech compensation for equivalent roles.
+
+Current Mitigations:
+- Equity refresh programme introduced in Q4 2025 (4-year vesting, cliff at 1 year).
+- "Innovation Fridays" (20% time) allow engineers to pursue research projects.
+- Two co-authored academic papers published in 2025 to maintain research brand.
+- Competing-offer match policy approved by the board for P5+ engineers.
+
+Residual Risk: MEDIUM — Compensation gap remains structural; equity helps but is
+illiquid until an exit event.
+
+---
+
+RISK #5: Cloud Infrastructure Cost Volatility
+---------------------------------------------
+Category: Financial / Operational
+Severity: MEDIUM
+Probability: MEDIUM
+
+Description:
+Approximately 62% of Nexara's COGS relates to cloud compute (primarily GPU instances
+on AWS and Azure for inference). Spot instance prices for A100 and H100 GPUs have
+fluctuated ±40% over the past 18 months. The FY2026 financial plan assumes stable GPU
+pricing; a sustained 25% price increase would reduce EBITDA by approximately $1.8M and
+push the company back to EBITDA breakeven.
+
+Current Mitigations:
+- Reserved instance commitments cover 70% of baseline inference load (1-year terms).
+- Engineering roadmap includes model distillation work to reduce per-query compute cost
+  by an estimated 30% (targeted for Q2 2026 delivery).
+- Multi-cloud strategy under evaluation to reduce single-vendor dependency.
+
+Residual Risk: MEDIUM — Reserved capacity reduces but does not eliminate spot exposure.
+
+---
+
+RISK #6: Competitive Displacement by Foundation Model Providers
+--------------------------------------------------------------
+Category: Strategic / Market
+Severity: HIGH
+Probability: MEDIUM
+
+Description:
+OpenAI, Google, and Anthropic are all expanding their enterprise platform offerings
+(ChatGPT Enterprise, Vertex AI Agent Builder, Claude for Work). If these providers
+build native low-code workflow tooling comparable to NexaCore, Nexara's core
+differentiation could be commoditised. Early signals: Google announced a NexaCore-adjacent
+feature in Vertex AI at Google Cloud Next 2025.
+
+Current Mitigations:
+- Nexara's moat is positioned as integrations (200+ pre-built connectors) and
+  industry-specific templates, which foundation model providers have not replicated.
+- NexaGuard compliance layer is a sticky differentiator for regulated industries.
+- Evaluating a "bring-your-own-model" architecture (BYOM) to let clients plug in any
+  foundation model, making Nexara model-agnostic.
+
+Residual Risk: HIGH — Structural threat that cannot be fully mitigated; requires
+continuous product differentiation investment.

@@ -1,0 +1,84 @@
+NEXARA LABS — ENGINEERING ARCHITECTURE & TECHNOLOGY STACK
+==========================================================
+Prepared by: Marcus Ellison, CTO
+Last updated: Q1 2026
+
+PLATFORM OVERVIEW
+-----------------
+NexaCore is built as a cloud-native, multi-tenant SaaS platform deployed exclusively on
+AWS (primary) with Azure as a secondary region for EU data residency. The platform processes
+approximately 4.2 million workflow runs per month as of Q1 2026, with a P95 end-to-end
+latency of 2.8 seconds for standard single-agent workflows.
+
+CORE INFRASTRUCTURE
+-------------------
+- Compute: Kubernetes (EKS) for all application services; separate GPU node pools
+  (g5.12xlarge and p3.8xlarge) dedicated to inference workloads.
+- Orchestration: Temporal.io for durable workflow execution. All NexaCore agent pipelines
+  are implemented as Temporal workflows, providing built-in retry, state persistence, and
+  observability.
+- Messaging: Apache Kafka for inter-service event streaming; used for agent output routing
+  and audit log emission.
+- Storage: PostgreSQL (RDS) for customer configuration and metadata; S3 for document
+  corpora and workflow artefacts; Redis for session state and rate limiting.
+- Observability: Datadog for metrics and APM; PagerDuty for incident management; custom
+  internal dashboard (built on Grafana) for model performance tracking.
+
+AI / ML LAYER
+-------------
+- Primary inference: Nexara runs a mixture of hosted model APIs (OpenAI GPT-4o, Anthropic
+  Claude 3.5 Sonnet) and self-hosted open models (Llama 3.1 70B on dedicated GPU nodes)
+  depending on client data residency requirements and cost targets.
+- Embedding models: text-embedding-3-large (OpenAI) for RAG pipelines; fallback to
+  sentence-transformers/all-MiniLM-L6-v2 for on-premise deployments.
+- Vector store: Pinecone (hosted) for multi-tenant RAG; pgvector extension on PostgreSQL
+  for single-tenant clients who require data isolation.
+- Fine-tuning: LoRA fine-tuning pipeline using Hugging Face PEFT; currently used for
+  NexaSupply domain adaptation on Llama 3.1 70B.
+- Evaluation framework: Internal "NexaEval" harness runs automated quality checks on
+  every model update before promotion to production. Checks include: factual consistency
+  (using NLI models), output schema compliance, latency regression, and safety classifiers.
+
+DATA PLATFORM
+-------------
+- Ingestion: Custom connectors for Salesforce, SAP S/4HANA, Oracle ERP, HubSpot, and
+  Snowflake. Connectors are implemented as isolated microservices with standardised
+  CDC (change data capture) interfaces.
+- Processing: Apache Spark on EMR for batch document processing and corpus indexing;
+  Flink for real-time event stream processing.
+- Data governance: Apache Atlas for metadata lineage; column-level encryption for PII
+  fields; all data classified by sensitivity tier at ingestion.
+
+AI ROADMAP (FY2026)
+-------------------
+Q1 2026 (in progress):
+  - Native multi-agent support in NexaCore v3.0: Orchestrator agents can spawn child
+    agents, share a conversation context, and aggregate structured results.
+  - Agent memory: Persistent memory store (Redis-backed) allowing agents to recall
+    prior workflow runs within a client's workspace.
+
+Q2 2026 (planned):
+  - Bring-your-own-model (BYOM): API gateway allowing clients to plug in private model
+    endpoints (Azure OpenAI, Bedrock, self-hosted) while retaining NexaCore's workflow
+    orchestration and compliance layers.
+  - Model distillation: Compress NexaSupply domain model from 70B to 13B parameters with
+    <5% quality degradation; targets 60% inference cost reduction.
+
+Q3–Q4 2026 (roadmap):
+  - Agentic evaluation sandbox: Isolated environment where clients can A/B test new
+    agent configurations against production traffic before promotion.
+  - Federated RAG: Allow agents to query across multiple client-defined corpora in a
+    single workflow without cross-tenant data leakage.
+
+KNOWN TECHNICAL RISKS
+----------------------
+1. Temporal.io dependency: The platform is deeply coupled to Temporal for state management.
+   Migration cost to an alternative orchestration layer is estimated at 18–24 months of
+   engineering effort. Vendor lock-in risk is acknowledged but accepted given Temporal's
+   open-source nature.
+2. Pinecone scaling costs: At projected FY2026 corpus sizes, Pinecone costs are estimated
+   to grow 3× without a migration to a self-hosted vector store. pgvector migration for
+   top-tier clients is being evaluated.
+3. Multi-tenant isolation: Current architecture uses schema-level tenant isolation in
+   PostgreSQL. A move to row-level security (RLS) is planned for Q3 2026 to reduce the
+   blast radius of potential SQL injection vulnerabilities.

@@ -1,0 +1,23 @@
+NEXARA LABS — SAMPLE ANALYST QUERIES FOR SYSTEM TESTING
+=========================================================
+Include output for at least 2 of the following in your sample_run/ folder.
+
+Q1
+Produce a full strategic intelligence brief for Nexara Labs as of today, including
+competitive positioning, top risks, and expansion recommendations.
+
+Q2
+What are Nexara Labs' three most critical operational risks, and how do they compare
+to signals from the current market environment?
+
+Q3
+Given Nexara's current financials and 5-year strategy, which of their stated expansion
+markets presents the highest risk-adjusted opportunity?
+
+Q4
+Summarise Nexara Labs' technology differentiation versus competitors and flag any
+technical risks from their architecture documentation.
+
+Q5
+How should a potential acquirer view Nexara Labs? Provide a structured due-diligence
+summary.

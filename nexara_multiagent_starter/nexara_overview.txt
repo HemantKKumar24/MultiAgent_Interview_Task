@@ -1,0 +1,57 @@
+NEXARA LABS — COMPANY OVERVIEW
+==============================
+
+Founded: 2018
+Headquarters: Austin, Texas, USA
+Stage: Series C (closed Q3 2023, $85M raised)
+Employees: ~340 (as of Q1 2026)
+
+FOUNDING STORY
+--------------
+Nexara Labs was founded in 2018 by Dr. Priya Anand (CEO) and Marcus Ellison (CTO), both
+former research scientists at a large enterprise software company. Frustrated by the gap
+between academic AI research and practical enterprise deployment, they set out to build a
+platform that lets mid-market companies operationalise AI without requiring dedicated ML
+engineering teams. The name "Nexara" derives from "nexus" and "ara" (Latin: altar) —
+symbolising the firm's mission to be the connective hub where data, intelligence, and
+business decisions meet.
+
+MISSION
+-------
+Nexara Labs' stated mission is: "To make decision-grade AI accessible to every operations
+team, not just the Fortune 500." The company focuses on lowering the barrier to enterprise
+AI adoption through pre-built agent templates, a low-code workflow editor, and an
+opinionated data integration layer that connects to existing ERP and CRM systems out of
+the box.
+
+PRODUCT LINES
+-------------
+1. NexaCore Platform
+   The flagship SaaS product. A multi-tenant AI workflow platform that lets business
+   analysts configure, deploy, and monitor AI-powered decision pipelines using a visual
+   interface. Agents within NexaCore can call external APIs, query internal databases,
+   and generate structured outputs that feed downstream business systems. Currently serves
+   230 enterprise clients across manufacturing, logistics, and financial services.
+
+2. NexaInsight
+   An embedded analytics layer that sits on top of NexaCore, providing real-time dashboards
+   of agent activity, model drift alerts, and cost attribution per workflow. Launched in
+   Q2 2024. Adopted by 60% of existing NexaCore clients within 12 months of launch.
+
+3. NexaGuard
+   A compliance and AI governance module introduced in Q4 2024 in response to emerging EU
+   AI Act requirements. Provides audit logs, bias scoring, and policy enforcement gates for
+   AI workflows. Currently in pilot with 18 enterprise clients in the financial services
+   sector.
+
+4. Professional Services
+   A small but growing consulting arm (~40 staff) that helps clients configure NexaCore for
+   industry-specific use cases. Revenue from this segment is intentionally capped to keep
+   the company's margins software-oriented.
+
+CULTURE & VALUES
+----------------
+Nexara Labs operates under four stated values: Transparency (all model decisions must be
+explainable to end users), Reliability (99.9% SLA on all production pipelines), Frugality
+(efficient use of compute resources is a first-class engineering concern), and Inclusion
+(product teams include at least one domain expert from the target industry during design).

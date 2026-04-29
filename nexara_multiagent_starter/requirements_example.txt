@@ -1,0 +1,48 @@
+# requirements_example.txt
+# Suggested dependencies for the Nexara SIB multi-agent system.
+# Pin to specific versions in your final requirements.txt.
+# Not all packages are required — pick the ones that match your chosen LLM provider.
+
+# --- LLM Providers (choose one or more) ---
+openai>=1.30.0                 # OpenAI GPT-4o / GPT-4-turbo
+anthropic>=0.28.0              # Anthropic Claude 3.5 Sonnet / Haiku
+google-generativeai>=0.7.0     # Google Gemini (optional)
+groq>=0.9.0                    # Groq (fast inference, optional)
+
+# --- Data validation & schemas ---
+pydantic>=2.7.0                # alternative to dataclasses; stronger validation
+dataclasses-json>=0.6.0        # JSON serialisation for stdlib dataclasses
+
+# --- RAG / Embeddings ---
+sentence-transformers>=3.0.0   # local embedding models (all-MiniLM-L6-v2 etc.)
+numpy>=1.26.0                  # cosine similarity for check_hallucination tool
+scikit-learn>=1.4.0            # TF-IDF / cosine similarity utilities
+
+# --- Vector store (choose one) ---
+pinecone-client>=4.1.0         # hosted vector store
+pgvector>=0.2.5                # PostgreSQL vector extension client
+
+# --- Document chunking ---
+langchain-text-splitters>=0.2.0  # RecursiveCharacterTextSplitter
+tiktoken>=0.7.0                  # token counting for OpenAI models
+
+# --- Async / concurrency ---
+asyncio                        # stdlib — no install needed
+aiohttp>=3.9.0                 # async HTTP for parallel tool calls
+
+# --- Observability & logging ---
+structlog>=24.1.0              # structured logging (JSONL friendly)
+rich>=13.7.0                   # pretty console output during development
+
+# --- Report generation ---
+jinja2>=3.1.0                  # HTML report templating (optional)
+markdown>=3.6.0                # Markdown rendering utilities
+
+# --- Testing ---
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.14.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0           # load API keys from .env file
+tenacity>=8.3.0                # retry logic with exponential backoff

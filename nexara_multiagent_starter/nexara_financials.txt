@@ -1,0 +1,64 @@
+NEXARA LABS — FINANCIAL SUMMARY
+================================
+Period: FY2023 Actuals, FY2024 Actuals, FY2025 Actuals (fiscal year ends December 31)
+Source: Internal board pack, Q4 2025 close. Not for external distribution.
+
+KEY METRICS
+-----------
+
+                        FY2023       FY2024       FY2025
+                        -------      -------      -------
+Total Revenue           $22.4M       $34.1M       $51.8M
+  - SaaS (NexaCore)     $17.1M       $26.5M       $40.3M
+  - NexaInsight          $0.0M        $3.2M        $7.2M
+  - NexaGuard            $0.0M        $0.8M        $2.1M
+  - Professional Svcs    $5.3M        $3.6M        $2.2M
+Annual Recurring Rev.   $19.8M       $31.0M       $47.6M
+ARR Growth YoY            —           56.6%        53.5%
+Gross Margin            61.2%        66.8%        71.3%
+EBITDA                 ($4.1M)      ($1.8M)       $3.2M
+Net Revenue Retention   108%         114%          119%
+Headcount               194          271           341
+Revenue per Employee   $115k        $126k        $152k
+
+UNIT ECONOMICS
+--------------
+Customer Acquisition Cost (CAC):  $48,200 (FY2025 blended)
+Average Contract Value (ACV):     $187,000 (FY2025 NexaCore enterprise)
+CAC Payback Period:               ~9.8 months (down from 14.2 months in FY2023)
+Churn Rate (gross logo):          4.1% annually (FY2025)
+Expansion Revenue:                Accounts for 31% of new ARR in FY2025
+
+BALANCE SHEET HIGHLIGHTS (as of Dec 31, 2025)
+----------------------------------------------
+Cash & equivalents:               $61.3M
+Total debt:                       $8.0M (Series B convertible note, matures 2027)
+Runway at current burn:           Profitable; no runway constraint
+Capital raised to date:           $127M across Seed, Series A, B, and C
+
+THREE-YEAR GROWTH NARRATIVE
+----------------------------
+FY2023 was a year of product consolidation following the Series B close. Professional
+Services revenue was deliberately wound down as the company shifted focus to software
+margins. NexaCore ARR grew 42% that year, driven primarily by expansion in mid-market
+manufacturing clients in the US Midwest.
+
+FY2024 saw the launch of NexaInsight, which accelerated upsell into the existing customer
+base. Net Revenue Retention crossed 110% for the first time, indicating that expansion
+revenue was outpacing churn. Headcount grew 40% as the company doubled its go-to-market
+team in preparation for the Series C.
+
+FY2025 marked the first EBITDA-positive full year. The company attributes this to improved
+gross margins from cloud infrastructure optimisation (migrated 70% of inference workloads
+to reserved capacity) and the high-margin NexaGuard attach rate. The board has set a target
+of $75M ARR by end of FY2026, implying ~57% growth, which management considers achievable
+but dependent on closing two large financial services contracts currently in late-stage
+negotiation.
+
+RISKS TO FINANCIAL PLAN
+------------------------
+- Two enterprise deals in pipeline (combined $4.2M ACV) represent significant concentration;
+  loss of either would require downward revision of FY2026 guidance.
+- NexaGuard revenue depends on EU AI Act enforcement timelines, which remain uncertain.
+- Infrastructure cost assumptions in the FY2026 plan do not account for potential GPU
+  shortages or price increases from cloud providers.
