@@ -1,0 +1,26 @@
+# Virtual Environments
+myvenv/
+venv/
+env/
+.venv/
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+implementation_plan.md
+temp_docx.txt
